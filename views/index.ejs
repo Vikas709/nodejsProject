@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/meta")%>
+    <title>Document</title>
+</head>
+<body>
+    
+    <form 
+    class="bg-gray-100 ml-[17rem] w-[16rem] mt-[6rem]"
+    action="/register"
+    method="post"
+    >
+        <div><p class="font-extrabold">registration form</p>
+        </div>
+       <div >
+        <input 
+         type="string"
+         name="name" 
+         class="border border-orange-300  font-extrabold mt-3 "
+         placeholder="name"
+       
+         required
+          />
+        </div>
+
+        <div>
+            <input 
+            type="text" 
+            name="email" 
+            class="border border-orange-300 font-extrabold mt-3 " 
+            placeholder="email"
+           
+            required/>
+        </div>
+        
+        <div><input 
+            type="number"
+            name="phone" 
+            class="border border-orange-300  font-extrabold mt-3"
+            placeholder="phone"
+            
+            required /></div>
+
+       
+        <div><input
+            type="text"
+            name="password" 
+            class="border border-orange-300  font-extrabold mt-3"
+            placeholder="password"
+            
+            required /></div>
+        
+        
+        <button class="border border-orange-300  font-extrabold mt-3" type="submit"
+        >submit</button>
+       </div>
+    </form>
+    
+</body>
+</html>
